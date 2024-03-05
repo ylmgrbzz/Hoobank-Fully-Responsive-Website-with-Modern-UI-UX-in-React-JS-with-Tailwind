@@ -29,7 +29,7 @@ const Navbar = () => {
         <img
           src={toggle ? close : menu}
           alt="menu"
-          className="w-[28px] h-[28px] object-contain"
+          className="w-[28px] h-[28px] object-contain cursor-pointer"
           onClick={() => setToggle(!toggle)}
         />
 
@@ -40,7 +40,7 @@ const Navbar = () => {
            sidebar`}
         >
           {" "}
-          <ul className="list-none flex  justify-end items-start flex-1 flex-col ">
+          <ul className="list-none flex  justify-end items-start  flex-col ">
             {navLinks.map((nav, index) => (
               <li
                 key={nav.id}
